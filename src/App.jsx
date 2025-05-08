@@ -9,15 +9,15 @@ import { BackgroundLines } from "./components/ui/background-lines";
 function App() {
   return (
     <>
-      {/* <BackgroundLines className="min-h-screen bg-background text-foreground overflow-x-hidden"> */}
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <ProjectSection />
-      <SkillSection />
-      <ContactSection />
-      <Footer />
-      {/* </BackgroundLines> */}
+      <BackgroundLines className="min-h-screen bg-background text-foreground overflow-x-hidden">
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+        <ProjectSection />
+        <SkillSection />
+        <ContactSection />
+        <Footer />
+      </BackgroundLines>
     </>
   );
 }
