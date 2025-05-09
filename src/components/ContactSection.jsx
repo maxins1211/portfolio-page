@@ -29,7 +29,7 @@ const ContactSection = () => {
               </h3>
               <div className="flex justify-center gap-6 mt-4">
                 <a
-                  href="https://linkedin.com/in/your-profile"
+                  href="https://www.linkedin.com/in/nghi-lam-vo/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cosmic-button flex items-center gap-2"
@@ -37,7 +37,7 @@ const ContactSection = () => {
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://github.com/your-username"
+                  href="https://github.com/maxins1211"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cosmic-button flex items-center gap-2"
