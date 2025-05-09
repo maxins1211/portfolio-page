@@ -25,57 +25,63 @@ const Navbar = () => {
       document.body.style.overflow = "";
     };
   }, [isMenuOpen]);
+
   return (
-    <nav
-      className={cn(
-        "fixed w-full z-40 transition-all duration-300",
-        "md:py-4 bg-background/80 backdrop-blur-md shadow-xs py-3 "
-      )}
-    >
-      <div className="container flex items-center justify-between">
-        <a
-          className="text-xl font-bold text-primary flex items-center"
-          href="#hero"
-        >
-          <span className="relative z-10">
-            <span className="text-glow text-foreground"> Nghi Lam Vo </span>{" "}
-          </span>
-        </a>
+    <>
+      <nav
+        className={cn(
+          "fixed w-full z-40 transition-all duration-300",
+          "md:py-4 bg-background/80 backdrop-blur-md shadow-xs py-3"
+        )}
+      >
+        <div className="container flex items-center justify-between">
+          <a
+            className="text-xl font-bold text-primary flex items-center"
+            href="#hero"
+          >
+            <span className="relative z-10">
+              <span className="text-glow text-foreground">Nghi Lam Vo</span>
+            </span>
+          </a>
 
-        {/* desktop nav */}
-        <div className="hidden md:flex space-x-8">
-          {navItems.map((item, key) => (
-            <a
-              key={key}
-              href={item.href}
-              className="text-foreground/80 hover:text-primary transition-colors duration-300"
+          {/* desktop nav */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item, key) => (
+              <a
+                key={key}
+                href={item.href}
+                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+              >
+                {item.name}
+              </a>
+            ))}
+            <ThemeToggle />
+          </div>
+
+          {/* mobile nav controls */}
+          <div className="flex items-center md:hidden">
+            <ThemeToggle />
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="ml-1 p-2 text-foreground"
             >
-              {item.name}
-            </a>
-          ))}
-          <ThemeToggle />
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
+      </nav>
 
-        {/* mobile nav */}
+      {/* Mobile menu - separate from nav */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 bg-background/99 z-50 flex flex-col items-center justify-center md:hidden">
+          <button
+            onClick={() => setIsMenuOpen(false)}
+            className="absolute top-3 right-8 p-2 text-foreground"
+          >
+            <X size={24} />
+          </button>
 
-        <button
-          onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="md:hidden p-2 text-foreground z-50"
-          aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
-        </button>
-
-        <div
-          className={cn(
-            "fixed inset-0 bg-background/80 backdrop-blur-md z-40 flex flex-col items-center justify-center",
-            "transition-all duration-300 md:hidden",
-            isMenuOpen
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          )}
-        >
-          <div className="flex flex-col space-y-8 text-xl">
+          <div className="flex flex-col space-y-10 text-xl items-center">
             {navItems.map((item, key) => (
               <a
                 key={key}
@@ -88,8 +94,8 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-      </div>
-    </nav>
+      )}
+    </>
   );
 };
 
