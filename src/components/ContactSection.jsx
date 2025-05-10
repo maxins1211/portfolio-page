@@ -12,7 +12,7 @@ const ContactSection = () => {
           <div className="space-y-10 flex flex-col items-center">
             {/* Email Contact */}
             <div className="text-center">
-              <h3 className="text-2xl font-semibold mb-4">Send Me an Email</h3>
+              <h3 className="text-2xl font-semibold mb-4">Send me an Email</h3>
               <a
                 href="mailto:lamvo.tech@gmail.com"
                 className="flex items-center justify-center gap-2 hover:text-primary transition-colors"

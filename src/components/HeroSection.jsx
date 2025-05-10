@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-between px-4 py-16 md:py-0"
+      className="relative min-h-screen flex flex-col items-center justify-between px-4 py-10 md:py-0"
     >
       {/* Main content - centered */}
       <div className="flex-grow flex items-center justify-center w-full">
@@ -34,7 +34,7 @@ const HeroSection = () => {
               </span>
             </h1>
 
-            <p className="text-base md:text-3xl text-muted-foreground max-w-4xl mx-auto opacity-0 animate-fade-in-delay-3">
+            <p className="text-base md:text-2xl lg:text-3xl text-muted-foreground max-w-4xl mx-auto opacity-0 animate-fade-in-delay-3">
               A 2nd year Software Development student at Sheridan College with
               strong JavaScript skills and MERN stack experience. Passionate
               about full-stack development and actively seeking co-op

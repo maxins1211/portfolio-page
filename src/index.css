@@ -40,36 +40,33 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%; /* Pure white background */
-    --foreground: 0 0% 0%; /* Pure black text */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
 
-    --card: 0 0% 98%; /* Very subtle off-white for cards */
+    --card: 0 0% 98%;
 
-    --primary: 0 0% 0%; /* Pure black for primary elements */
-    --primary-foreground: 0 0% 100%; /* White text on primary elements */
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
 
-    --border: 0 0% 85%; /* Light gray borders */
+    --border: 0 0% 85%;
 
-    /* Accent color - subtle gray */
-    --accent: 0 0% 90%; /* Very light gray accent */
-    --accent-foreground: 0 0% 0%; /* Black text on accent */
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 0%;
   }
 
   .dark {
-    /* Dark mode - Minimalist black & white scheme */
-    --background: 0 0% 0%; /* Pure black background */
-    --foreground: 0 0% 100%; /* Pure white text */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 5%; /* Very slightly lighter black for cards */
+    --card: 0 0% 5%;
 
-    --primary: 0 0% 100%; /* Pure white for primary elements */
-    --primary-foreground: 0 0% 0%; /* Black text on primary elements */
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
 
-    --border: 0 0% 15%; /* Dark gray borders */
+    --border: 0 0% 15%;
 
-    /* Accent color - dark mode */
-    --accent: 0 0% 10%; /* Very dark gray accent */
-    --accent-foreground: 0 0% 100%; /* White text on accent */
+    --accent: 0 0% 10%;
+    --accent-foreground: 0 0% 100%;
   }
 
   * {
@@ -109,7 +106,6 @@
 
 @utility text-glow {
   @apply relative;
-  /* Removed colored glow, replaced with subtle gray shadow for minimalism */
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -119,7 +115,6 @@
 
 @utility gradient-border {
   @apply relative rounded-md;
-  /* Removed gradient, using solid border for minimalism */
   background: hsl(var(--card));
   background-clip: padding-box;
   border: 1px solid hsl(var(--border));

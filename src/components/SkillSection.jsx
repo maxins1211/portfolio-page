@@ -6,42 +6,38 @@ const SkillsSection = () => {
     {
       name: "Frontend",
       skills: [
-        { name: "HTML" },
-        { name: "CSS" },
-        { name: "JavaScript" },
-        { name: "React" },
-        { name: "Vue" },
-        { name: "TypeScript" },
-        { name: "Tailwind" },
-        { name: "Next.js" },
+        { name: "JavaScript", icon: "skill-icons/javascript.svg" },
+        { name: "TypeScript", icon: "skill-icons/typescript.svg" },
+        { name: "React", icon: "skill-icons/react.svg" },
+        { name: "Redux", icon: "skill-icons/redux.svg" },
+        { name: "React Query", icon: "skill-icons/react-query.svg" },
+        { name: "Angular", icon: "skill-icons/angular.svg" },
+        { name: "HTML", icon: "skill-icons/html.svg" },
+        { name: "CSS", icon: "skill-icons/css.svg" },
+        { name: "Tailwind", icon: "skill-icons/tailwindcss.svg" },
       ],
     },
     {
       name: "Backend",
       skills: [
-        { name: "Node.js" },
-        { name: "Express" },
-        { name: "Python" },
-        { name: "Django" },
-        { name: "PostgreSQL" },
-        { name: "MongoDB" },
-        { name: "GraphQL" },
-        { name: "REST API" },
+        { name: "NodeJS", icon: "skill-icons/nodejs.svg" },
+        { name: "ExpressJS", icon: "skill-icons/express.svg" },
+        { name: "Java", icon: "skill-icons/java.svg" },
+        { name: "Spring Boot", icon: "skill-icons/spring-boot.svg" },
       ],
     },
     {
-      name: "Tools",
+      name: "Infrastructure & Tools",
       skills: [
         {
-          name: "Git",
+          name: "AWS",
+          icon: "skill-icons/aws.svg",
         },
-        { name: "Docker" },
-        { name: "AWS" },
-        { name: "Figma" },
-        { name: "Webpack" },
-        { name: "Jest" },
-        { name: "CI/CD" },
-        { name: "Linux" },
+        { name: "SQL", icon: "skill-icons/sql.svg" },
+        { name: "PostgreSQL", icon: "skill-icons/postgresql.svg" },
+        { name: "MongoDB", icon: "skill-icons/mongodb.svg" },
+        { name: "Playwright", icon: "skill-icons/playwright.svg" },
+        { name: "Jest", icon: "skill-icons/jest.svg" },
       ],
     },
   ];
@@ -80,13 +76,15 @@ const SkillsSection = () => {
                       key={skill.name}
                       className="group flex items-center p-3 rounded-lg transition-all duration-300 hover:bg-accent"
                     >
-                      <div className="w-8 h-8 rounded-md border border-border mr-3 flex items-center justify-center bg-background">
-                        {/* Placeholder for icon */}
-                        <span className="text-xs text-foreground opacity-40">
-                          {skill.icon}
-                        </span>
+                      <div className="w-8 h-8 mr-2 flex items-center justify-center ">
+                        <img
+                          src={skill.icon}
+                          alt=""
+                          width="36px"
+                          height="36px"
+                        />
                       </div>
-                      <span className="text-foreground text-sm group-hover:text-primary transition-colors duration-200">
+                      <span className="text-foreground text-base group-hover:text-primary transition-colors duration-200">
                         {skill.name}
                       </span>
                     </div>
