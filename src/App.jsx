@@ -13,7 +13,7 @@ function App() {
   if (!mounted) return null;
   return (
     <>
-      <BackgroundLines className="min-h-screen bg-background text-foreground dark:bg-black bg-white overflow-x-hidden">
+      <BackgroundLines className="min-h-screen bg-background text-foreground overflow-x-hidden">
         <Navbar />
         <HeroSection />
         <AboutSection />

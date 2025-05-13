@@ -5,12 +5,7 @@ import React from "react";
 
 export const BackgroundLines = ({ children, className, svgOptions }) => {
   return (
-    <div
-      className={cn(
-        "h-[20rem] md:h-screen w-full bg-white dark:bg-black",
-        className
-      )}
-    >
+    <div className={cn("h-[20rem] md:h-screen w-full", className)}>
       <SVG svgOptions={svgOptions} />
       {children}
     </div>
@@ -82,7 +77,7 @@ const SVG = ({ svgOptions }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="absolute inset-0 w-full h-full bg-white dark:bg-dark"
+      className="absolute inset-0 w-full h-full"
     >
       {paths.map((path, idx) => (
         <motion.path
