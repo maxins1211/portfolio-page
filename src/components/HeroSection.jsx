@@ -9,7 +9,7 @@ const HeroSection = () => {
     >
       {/* Main content - centered */}
       <div className="flex-grow flex items-center justify-center w-full">
-        <div className="container max-w-4xl mx-auto z-20">
+        <div className="container max-w-4xl mx-auto z-10">
           <div className="space-y-6">
             <div className="flex justify-center opacity-0 animate-fade-in">
               <div className="relative w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden border-4 shadow-lg transform hover:scale-105 transition-transform duration-300">
