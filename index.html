@@ -12,15 +12,12 @@
   </body>
   <script>
     (function () {
-      const storedTheme = localStorage.getItem("theme");
+      const theme = localStorage.getItem("theme");
       const prefersDark = window.matchMedia(
         "(prefers-color-scheme: dark)"
       ).matches;
-
-      if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+      if (theme === "dark" || (!theme && prefersDark)) {
         document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
       }
     })();
   </script>
