@@ -133,3 +133,8 @@
   padding: 0;
   text-align: center;
 }
+
+.no-scroll {
+  overflow: hidden !important;
+  height: 100vh;
+}
