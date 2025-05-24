@@ -62,7 +62,7 @@ const projects = [
         description:
             "An e-learning platform with role-based authentication and authorization. Implemented distinct user interfaces and functionalities for students and administrators.",
         image: "/images/lumi-learn.png",
-        tags: ["React", "Express", "Node", "SQL", "Azure"],
+        tags: ["Spring Boot", "Thymeleaf", "Spring Security", "JDBC", "H2", "Lombok"],
         demoUrl: "https://lumi-learn-9edb0d0cbf85.herokuapp.com/",
         githubUrl: "https://github.com/maxins1211/lumi-learn",
         date: "March 2025",
