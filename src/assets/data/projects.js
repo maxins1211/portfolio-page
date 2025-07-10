@@ -37,7 +37,7 @@ const projects = [
         id: 4,
         title: "Brain Buddy",
         description:
-            "Meet BrainBuddy, your AI companion for smarter, faster learning. It creates flashcards, answers questions, and helps with tough concepts anytime, anywhere.BrainBuddy: Your Smarter Way to Learn",
+            "Meet BrainBuddy, your AI companion for smarter, faster learning. It creates flashcards, answers questions, and helps with tough concepts anytime, anywhere.BrainBuddy: Your Smarter Way to Learn.",
         image: "images/brain-buddy.png",
         tags: ["React", "Flask", "Node", "SQL"],
         demoUrl: "https://devpost.com/software/brainbuddy-xrq4du",
@@ -47,10 +47,10 @@ const projects = [
     },
     {
         id: 5,
-        title: "frigorithm",
+        title: "fridgorithm",
         description:
-            "fridgorithm is a web app that takes the ingredients you already have — whether you snap a photo, say them out loud, or type them in — and instantly gives you a simple, delicious recipe",
-        image: "/images/frigorithm.png",
+            "fridgorithm is a web app that takes the ingredients you already have — whether you snap a photo, say them out loud, or type them in — and instantly gives you a simple, delicious recipe.",
+        image: "/images/fridgorithm.png",
         tags: ["React", "Express", "Node", "SQL", "Azure"],
         demoUrl: "https://devpost.com/software/fridgorithm",
         githubUrl: "https://github.com/sophieynw/fridgorithm",
@@ -67,6 +67,16 @@ const projects = [
         githubUrl: "https://github.com/maxins1211/lumi-learn",
         date: "March 2025",
     },
+    {
+        id: 7,
+        title: "ITale",
+        description: "A full-stack blogging platform built with React and Express.js, using MongoDB for a live database. Features user authentication, admin role management, and a responsive UI for creating and moderating blog content.",
+        image: "/images/itale.png",
+        tags: ["MongoDB", "ExpressJS", "React", "NodeJS", "JWT", "Redux", "React Query", "Shadcn UI"],
+        demoUrl: "https://itale-6bb8bdbcbb80.herokuapp.com/",
+        githubUrl: "https://github.com/maxins1211/ITale",
+        date: "July 2025"
+    }
 ];
 
 export default projects
